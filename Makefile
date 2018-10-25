@@ -14,9 +14,7 @@ my_pthread.o: my_pthread_t.h
 	$(CC) -pthread $(CFLAGS) my_pthread.c
 
 compile:
-	$(CC) -pthread -g -O0 -m32 -o my_pthread my_pthread.c
+	$(CC) -pthread -g -O0 -m32 -o my_mem_manager my_pthread.c my_mem_manager.c
 	
-
-
 clean:
 	rm -rf testfile *.o *.a

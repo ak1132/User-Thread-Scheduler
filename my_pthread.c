@@ -6,6 +6,7 @@
 // iLab Server:h206-2.cs.rutgers.edu
 
 #include "my_pthread_t.h"
+#include "my_mem_manager.h"
 
 #define USE_MY_PTHREAD 1
 
@@ -901,7 +902,7 @@ void * dummyFunction(tcb *thread) {
 	return &(thread->tid);
 }
 
-/*int main(int argc, char **argv) {
+int main(int argc, char **argv) {
  pthread_t t1, t2, t3, t4;
  pthread_create(&t1, NULL, (void *) dummyFunction, &t1);
  pthread_create(&t2, NULL, (void *) dummyFunction, &t2);
@@ -923,5 +924,5 @@ void * dummyFunction(tcb *thread) {
  printf("Done\n");
 
  return 0;
- }*/
+ }
 
